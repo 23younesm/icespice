@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silk Road Marketplace</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <ultra-header>
+    <header>
+        <!--DEV NOTES: aka.ms/confidential -->
+        <a href="/">
+            <img class="silky" src="img/icon.jpeg">
+        </a>        
+        <div class="btc-container">
+            <img src="img/btc.png" alt="BTC Icon" class="btc-icon">
+            <span class="black" id="btc-amount"></span> BTC
+        </div>
+        <script>
+            function getRandomBTC() {
+                return (Math.random() * (1000 - 0.01) + 0.01).toFixed(2);
+            }
+            window.onload = function() {
+                document.getElementById("btc-amount").innerText = getRandomBTC();
+            };
+        </script>
+        <form>
+            <input placeholder="Search for product">
+            <button>Search</button>
+        </form>
+        <h2>Login</h2>
+        <form id="login" action="/login" method="POST">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>        
+    </header>
+    </ultra-header>
+    <main>
+        <aside>
+            <h3>Main Pages</h3>
+            <ul>
+                <li><a href="/">Marketplace</a></li>
+                <li><a href="/founder.html">About The Founder</a></li>
+                <li><a href="/admin">Admin</a></li>
+                <li><a href="/archive.html">Archive</a></li>
+            </ul>
+            <h3>Categories</h3>
+            <ul>
+                <li><a href="/">THE BEST MUSIC</a></li>
+                <li><a href="/">THE COOLEST MUSIC</a></li>
+                <li><a href="/">THE MUNCH MUSIC</a></li>
+                <li><a href="/">THE HOT MUSIC</a></li>
+            </ul>
+        </aside>
+        <section id="products">
+            <h2>Product Listings</h2>
+            <div class="product">
+                <img src="img/1.jpeg" alt="Product">
+                <p class="product-name">Grraahh Album</p>
+                <p class="product-price">18.79 BTC</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="img/2.jpeg" alt="Product">
+                <p class="product-name">Munch Album</p>
+                <p class="product-price">1.53 BTC</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="img/3.jpeg" alt="Product">
+                <p class="product-name">Princess Album</p>
+                <p class="product-price">13.98 BTC</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="img/3.jpg" alt="Product">
+                <p class="product-name">Fart Album</p>
+                <p class="product-price">5.69 BTC</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="img/4.jpeg" alt="Product">
+                <p class="product-name">Munch 2.0 Album</p>
+                <p class="product-price">420.55 BTC</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

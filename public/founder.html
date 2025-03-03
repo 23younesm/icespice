@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artist</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <ultra-header>
+    <header>
+        <!--DEV NOTES: aka.ms/confidential -->
+        <a href="/">
+            <img class="silky" src="img/icon.jpeg">
+        </a>        
+        <div class="btc-container">
+            <img src="img/btc.png" alt="BTC Icon" class="btc-icon">
+            <span class=black id="btc-amount"></span> BTC
+        </div>
+        <script>
+            function getRandomBTC() {
+                return (Math.random() * (1000 - 0.01) + 0.01).toFixed(2);
+            }
+            window.onload = function() {
+                document.getElementById("btc-amount").innerText = getRandomBTC();
+            };
+        </script>
+        
+        <form>
+            <input placeholder="Search for product">
+            <button>Search</button>
+        </form>
+        <h2>Login</h2>
+        <form action="/login" method="POST">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>        
+    </header>
+    </ultra-header>
+    <main>
+        <aside>
+            <h3>Main Pages</h3>
+            <ul>
+                <li><a href="/">Marketplace</a></li>
+                <li><a href="/founder.html">About The Founder</a></li>
+                <li><a href="/admin">Admin</a></li>
+                <li><a href="/archive.html">Archive</a></li>
+            </ul>
+            <h3>Categories</h3>
+            <ul>
+                <li><a href="/">THE BEST MUSIC</a></li>
+                <li><a href="/">THE COOLEST MUSIC</a></li>
+                <li><a href="/">THE MUNCH MUSIC</a></li>
+                <li><a href="/">THE HOT MUSIC</a></li>
+            </ul>
+        </aside>
+            <section id="founder">
+                <main>
+                    <section id="founder">
+                        <img src="img/icespice.webp" alt="Ice Spice Image" class="founder-image">
+                        <h2>Ice Spice</h2>
+                        <p>Ice Spice, also known as the *BadLikeBarbie* queen of the rap game, took the world by storm with her unique *Vibe* and catchy lyrics. From *Munch* to *Bikini Bottom*, she’s been the voice of a new generation, breaking barriers and serving *Spice* in everything she does.</p>
+                        <p>With a *HowHigh* ambition, Ice Spice’s rise to fame was inevitable. She’s been the *InHaMood* for everyone who loves a good beat, bringing her signature flow to tracks like *FeelingU* and *CatchIt*. Whether she’s on stage or in the streets, Ice Spice is always the *GangstaBoo* of the scene.</p>
+                        <p class="quote">"OH BOY I SURE DO LOVE PENN STATE, ESPECIALLY THE CCSO CLUB!" - Ice Spice</p>
+                    </section>
+                </main>
+            </section>
+        </main>
+        </body>
+        </html>
+        
