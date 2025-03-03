@@ -9,7 +9,7 @@ sudo systemctl start mysql && sudo systemctl enable mysql
 sudo mysql -u root -p -e "
     CREATE DATABASE db;
 
-    CREATE USER 'sqluser'@'localhost' IDENTIFIED BY 'password';
+    CREATE USER 'sqluser'@'localhost' IDENTIFIED BY 'Passw0rd123!';
     GRANT ALL PRIVILEGES ON db.* TO 'sqluser'@'localhost';
     FLUSH PRIVILEGES;
 
@@ -22,9 +22,9 @@ sudo mysql -u root -p -e "
 
     INSERT INTO creds (username, password)
     VALUES
-        ('admin', 'Balls69Password!');
+        ('admin', 'Passw0rd123!');
 sudo mysql -u sqluser -p password -e "
-ALTER USER 'root'@'localhost' IDENTIFIED BY 'YouWillNotGuessThis';
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'Passw0rd123!';
 FLUSH PRIVILEGES;
 "
 

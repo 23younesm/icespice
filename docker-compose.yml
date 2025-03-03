@@ -9,7 +9,7 @@ services:
     environment:
       - DB_HOST=db
       - DB_USER=sqluser
-      - DB_PASSWORD=password
+      - DB_PASSWORD=Passw0rd123!
       - DB_NAME=db
     volumes:
       - .:/app
@@ -21,10 +21,10 @@ services:
     image: mysql:8
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: YouWillNotGuessThis
+      MYSQL_ROOT_PASSWORD: Passw0rd123!
       MYSQL_DATABASE: db
       MYSQL_USER: sqluser
-      MYSQL_PASSWORD: password
+      MYSQL_PASSWORD: Passw0rd123!
     ports:
       - "3306:3306"
     volumes:

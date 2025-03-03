@@ -6,4 +6,4 @@ CREATE TABLE IF NOT EXISTS creds (
 );
 
 INSERT INTO creds (username, password) VALUES
-    ('admin', 'Balls69Password!');
+    ('admin', 'Passw0rd123!');
