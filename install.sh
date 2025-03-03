@@ -22,17 +22,16 @@ sudo mysql -u root -p -e "
 
     INSERT INTO creds (username, password)
     VALUES
-        ('admin', 'Balls69Password!'),
-        ('TGM', 'TGMisVeryBalls!');
+        ('admin', 'Balls69Password!');
 sudo mysql -u sqluser -p password -e "
 ALTER USER 'root'@'localhost' IDENTIFIED BY 'YouWillNotGuessThis';
 FLUSH PRIVILEGES;
 "
 
 # Install Git
-git clone https://github.com/23younesm/silkroad.git
+git clone https://github.com/23younesm/icespice.git
 
-cd silkroad
+cd icespice
 
 # Install Node.js and npm
 sudo apt install nodejs npm -y

@@ -27,9 +27,6 @@ app.use(session({
     }
 }));
 
-// Multer configuration
-const upload = multer({ dest: "./server/uploads/" });
-
 // Create a connection pool for MySQL
 const pool = mysql.createPool({
     host: process.env.DB_HOST || "localhost", // Use "db" since it's the service name in docker-compose

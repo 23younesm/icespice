@@ -73,7 +73,7 @@ form button:hover {
 
 header form[action="/login"] {
     position: absolute; /* Position the login form absolutely */
-    top: 25px; /* Adjust top position to avoid overlap with the Silk Road image */
+    top: 25px;
     right: 10px; /* Keep the form in the top right corner */
     margin: 0;
 }
